@@ -1,0 +1,16 @@
+{% extends 'base/task_list.html' %}
+{% block content %}
+<div class="header-bar">
+    <h1>Notifications</h1>
+</div>
+<div class="notification-list">
+    {% for notification in notifications %}
+    <div class="notification">
+        Task:
+        {{ notification.task}};
+        Message:
+        {{ notification.message }}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
